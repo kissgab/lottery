@@ -9,7 +9,8 @@ io.readCSV(path.join(__dirname, 'data', 'hatos.csv'))
   return lottery
 })
 .then((lottery) => {
-  console.log('aaaaa', lottery)
+  lottery.runSimulations()
+  return lottery
 })
 .catch((err) => {
   console.error(err)
