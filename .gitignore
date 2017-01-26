@@ -7,3 +7,4 @@ test/e2e/reports
 uploads/
 /storage/
 selenium-debug.log
+/export

@@ -8,13 +8,12 @@ io.readCSV(path.join(__dirname, 'data', 'hatos.csv'))
   lottery.createDrawsFromList(items)
   return lottery
 })
-// .then((lottery) => {
-//   var dist = lottery.getNumberDistribution()
-//   console.log('dist', dist)
-//   return lottery
-// })
 .then((lottery) => {
   lottery.runSimulations()
+  return lottery
+})
+.then((lottery) => {
+  lottery.exportSimulations(path.join(__dirname, 'export'))
   return lottery
 })
 .catch((err) => {
