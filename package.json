@@ -12,6 +12,7 @@
     "bluebird": "^3.4.7",
     "fast-csv": "^2.3.0",
     "handlebars": "^4.0.6",
+    "jimp": "^0.2.27",
     "lodash": "^4.17.4",
     "random-weighted-choice": "^0.1.3"
   }

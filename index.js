@@ -16,6 +16,10 @@ io.readCSV(path.join(__dirname, 'data', 'hatos.csv'))
   lottery.exportSimulations(path.join(__dirname, 'export'))
   return lottery
 })
+.then((lottery) => {
+  lottery.exportStatistics(path.join(__dirname, 'export'))
+  return lottery
+})
 .catch((err) => {
   console.error(err)
 })
